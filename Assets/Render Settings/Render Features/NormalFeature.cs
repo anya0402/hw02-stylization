@@ -42,11 +42,14 @@ class NormalsPass : ScriptableRenderPass
     public NormalsPass(RenderTexture targetTexture, LayerMask layerMask, Material mat)
     {
         m_ProfilingSampler = new ProfilingSampler("RenderNormals");
-        m_FilteringSettings = new FilteringSettings(RenderQueueRange.opaque, layerMask);
+        m_FilteringSettings = new FilteringSettings(RenderQueueRange.all, layerMask);
 
         target = targetTexture;
 
         m_ShaderTagIdList.Add(new ShaderTagId("DepthOnly")); // Only render DepthOnly pass
+        m_ShaderTagIdList.Add(new ShaderTagId("UniversalForward"));
+        m_ShaderTagIdList.Add(new ShaderTagId("UniversalForwardOnly"));
+        m_ShaderTagIdList.Add(new ShaderTagId("SRPDefaultUnlit"));
         normalsMaterial = mat;
     }
 
