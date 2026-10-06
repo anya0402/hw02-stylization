@@ -152,12 +152,12 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Highlight: {r: 1, g: 0.67070746, b: 0.3160377, a: 0}
-    - _Midtone: {r: 0.8679245, g: 0.53948265, b: 0.07778566, a: 1}
+    - _Highlight: {r: 0.9811321, g: 0.7705082, b: 0.31007475, a: 1}
+    - _Midtone: {r: 0.8962264, g: 0.63238215, b: 0.26633143, a: 1}
     - _Ramped_Diffuse_Values: {r: 0.2, g: 0.4, b: 1, a: 0}
-    - _Shadow: {r: 0.8113208, g: 0.46029124, b: 0.14925243, a: 0}
+    - _Shadow: {r: 0.8773585, g: 0.5709772, b: 0.24417053, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Specular: {r: 0.9789937, g: 0.21226418, b: 1, a: 0}
-    - _Specular_Color: {r: 1, g: 0.9423084, b: 0, a: 0}
+    - _Specular_Color: {r: 0.6886792, g: 0.6349817, b: 0.5489943, a: 0}
     - _Thresholds: {r: 0.01, g: 0.31, b: 0, a: 0}
   m_BuildTextureStacks: []

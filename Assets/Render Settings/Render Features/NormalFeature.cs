@@ -47,9 +47,8 @@ class NormalsPass : ScriptableRenderPass
         target = targetTexture;
 
         m_ShaderTagIdList.Add(new ShaderTagId("DepthOnly")); // Only render DepthOnly pass
-        m_ShaderTagIdList.Add(new ShaderTagId("UniversalForward"));
-        m_ShaderTagIdList.Add(new ShaderTagId("UniversalForwardOnly"));
-        m_ShaderTagIdList.Add(new ShaderTagId("SRPDefaultUnlit"));
+        m_ShaderTagIdList.Add(new ShaderTagId("DepthNormals")); // Only render DepthOnly pass
+        m_ShaderTagIdList.Add(new ShaderTagId("DepthNormalsOnly")); // Only render DepthOnly pass
         normalsMaterial = mat;
     }
 
@@ -65,7 +64,7 @@ class NormalsPass : ScriptableRenderPass
             return;
         SortingCriteria sortingCriteria = renderingData.cameraData.defaultOpaqueSortFlags;
         DrawingSettings drawingSettings = CreateDrawingSettings(m_ShaderTagIdList, ref renderingData, sortingCriteria);
-        drawingSettings.overrideMaterial = normalsMaterial;
+        //drawingSettings.overrideMaterial = normalsMaterial;
 
         CommandBuffer cmd = CommandBufferPool.Get();
         using (new ProfilingScope(cmd, m_ProfilingSampler))

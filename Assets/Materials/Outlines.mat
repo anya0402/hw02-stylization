@@ -75,7 +75,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalsBuffer:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 8400000, guid: a348fe2d588e6ba48b8e31d4143cb7ba, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -109,25 +109,34 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
+    - _Blur_Radius: 0.54
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _ColorThreshold: 0.43
     - _Cull: 2
     - _Cutoff: 0.5
-    - _DepthStrength: 1
-    - _DepthThickness: 1
-    - _DepthThreshold: 1
+    - _DepthStrength: 0.87
+    - _DepthThickness: 9.77
+    - _DepthThreshold: 0.08
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
+    - _Edge_Max: 0.33
+    - _Edge_Min: 0.08
     - _EnvironmentReflections: 1
+    - _Fps: 15
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
+    - _NormalThreshold: 0.44
     - _OcclusionStrength: 1
     - _Parallax: 0.005
+    - _Pulse_Length: 0.3
+    - _Pulse_Max: 6
+    - _Pulse_Period: 10
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -137,13 +146,17 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _Thickness: 2.17
+    - _Thickness: 0.76
+    - _Wobble_Amplitude: 0.4
+    - _Wobble_Frequency: 50
+    - _Wobble_Scale: 20
+    - _Wobble_Speed: 4
     - _WorkflowMode: 1
-    - _X: 0
+    - _X: 0.01
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

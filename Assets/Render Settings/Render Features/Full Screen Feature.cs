@@ -76,6 +76,11 @@ public class FullScreenFeature : ScriptableRendererFeature
         m_FullScreenPass = new FullScreenPass(settings);
     }
 
+    public void SetMaterial(Material newMaterial)
+    {
+        settings.material = newMaterial;
+    }
+
     // Here you can inject one or multiple render passes in the renderer.
     // This method is called when setting up the renderer once per-camera.
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
@@ -85,5 +90,4 @@ public class FullScreenFeature : ScriptableRendererFeature
         renderer.EnqueuePass(m_FullScreenPass);
     }
 }
-
 
